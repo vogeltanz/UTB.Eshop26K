@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using UTB.Eshop26K.Infrastructure.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 

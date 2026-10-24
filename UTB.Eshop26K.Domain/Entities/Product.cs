@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace UTB.Eshop26K.Domain.Entities
 {
+    [Table(nameof(Product))]
     public class Product
     {
         [Key]

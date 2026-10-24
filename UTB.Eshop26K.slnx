@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="UTB.Eshop26K.Application/UTB.Eshop26K.Application.csproj" />
+  <Project Path="UTB.Eshop26K.Domain/UTB.Eshop26K.Domain.csproj" />
+  <Project Path="UTB.Eshop26K.Infrastructure/UTB.Eshop26K.Infrastructure.csproj" />
   <Project Path="UTB.Eshop26K.Web/UTB.Eshop26K.Web.csproj" />
 </Solution>

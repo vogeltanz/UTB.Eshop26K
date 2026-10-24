@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UTB.Eshop26K.Application\UTB.Eshop26K.Application.csproj" />
+    <ProjectReference Include="..\UTB.Eshop26K.Domain\UTB.Eshop26K.Domain.csproj" />
+    <ProjectReference Include="..\UTB.Eshop26K.Infrastructure\UTB.Eshop26K.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

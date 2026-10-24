@@ -46,7 +46,33 @@ namespace UTB.Eshop26K.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Product", (string)null);
+                    b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "nejlepší rohlík na světě",
+                            ImageUrl = "/img/products/produkty-01.jpg",
+                            Name = "Rohlík",
+                            Price = 2.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "nejlepší chleba v galaxii",
+                            ImageUrl = "/img/products/produkty-02.jpg",
+                            Name = "Chleba",
+                            Price = 50.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "nejlepší bageta ve vesmíru",
+                            ImageUrl = "/img/products/produkty-05.jpg",
+                            Name = "Bageta",
+                            Price = 40.0
+                        });
                 });
 #pragma warning restore 612, 618
         }

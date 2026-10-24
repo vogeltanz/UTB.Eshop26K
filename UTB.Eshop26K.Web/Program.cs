@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using UTB.Eshop26K.Application.Abstraction;
+using UTB.Eshop26K.Application.Implementation;
+using UTB.Eshop26K.Domain.Repositories;
 using UTB.Eshop26K.Infrastructure.Database;
+using UTB.Eshop26K.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +15,12 @@ ServerVersion serverVersion = ServerVersion.AutoDetect(connectionString);
 
 builder.Services.AddDbContext<EshopDbContext>(options =>
     options.UseMySql(connectionString, serverVersion));
+
+// Register repositories
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+// Register services
+builder.Services.AddScoped<IProductAppService, ProductAppService>();
 
 var app = builder.Build();
 

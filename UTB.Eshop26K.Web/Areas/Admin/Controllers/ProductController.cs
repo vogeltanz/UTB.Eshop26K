@@ -32,6 +32,7 @@ namespace UTB.Eshop26K.Web.Areas.Admin.Controllers
             return RedirectToAction(nameof(Select));
         }
 
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var success = _productAppService.Delete(id);

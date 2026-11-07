@@ -2,5 +2,6 @@
   <Project Path="UTB.Eshop26K.Application/UTB.Eshop26K.Application.csproj" />
   <Project Path="UTB.Eshop26K.Domain/UTB.Eshop26K.Domain.csproj" />
   <Project Path="UTB.Eshop26K.Infrastructure/UTB.Eshop26K.Infrastructure.csproj" />
+  <Project Path="UTB.Eshop26K.Tests/UTB.Eshop26K.Tests.csproj" Id="fabd868d-ab0b-4cba-9a4d-a5fe7c0c5581" />
   <Project Path="UTB.Eshop26K.Web/UTB.Eshop26K.Web.csproj" />
 </Solution>

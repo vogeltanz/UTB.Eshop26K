@@ -26,6 +26,7 @@ namespace UTB.Eshop26K.Web.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Product product)
         {
             _productAppService.Create(product);
@@ -33,6 +34,7 @@ namespace UTB.Eshop26K.Web.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(int id)
         {
             var success = _productAppService.Delete(id);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using UTB.Eshop26K.Domain.Validations;
 
 namespace UTB.Eshop26K.Domain.Entities
 {
@@ -13,6 +14,7 @@ namespace UTB.Eshop26K.Domain.Entities
         public int Id { get; set; }
         [Required]
         [StringLength(70)]
+        [UpperCase]
         public string Name { get; set; }
         public string? Description { get; set; }
         public double Price { get; set; }

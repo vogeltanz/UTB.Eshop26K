@@ -20,5 +20,23 @@ namespace UTB.Eshop26K.Application.Implementation
         {
             return _productRepository.GetAll().ToList();
         }
+
+        public void Create(Product product)
+        {
+            _productRepository.Add(product);
+        }
+
+        public bool Delete(int id)
+        {
+            var product = _productRepository.GetById(id);
+
+            if (product != null)
+            {
+                _productRepository.Delete(product);
+                return true;
+            }
+
+            return false;
+        }
     }
 }
